@@ -28,14 +28,35 @@ public class Numeros extends AppCompatActivity {
         list.setAdapter(adapter);
 
 
-        Item a = new Item ("Cinco","Five","I have five potatos");
+        Item a = new Item ("Um","One","It is not a particularly attractive one, and no one is fully satisfied with it.");
         numeros.add(a);
 
-        Item b = new Item ("Nome teste","Nome traduzido teste","frase teste");
+        Item b = new Item ("Dois","Nome traduzido teste","frase teste");
         numeros.add(b);
 
-        Item c = new Item ("Nome teste","Nome traduzido teste","frase teste");
+        Item c = new Item ("Três","Three","frase teste");
         numeros.add(c);
+
+        Item d = new Item ("Quatro","Four","frase teste");
+        numeros.add(d);
+
+        Item e = new Item ("Cinco","Five","I have five potatos");
+        numeros.add(e);
+
+        Item f = new Item ("Seis","Six","frase teste");
+        numeros.add(f);
+
+        Item g = new Item ("Sete","Seven","I have five potatos");
+        numeros.add(g);
+
+        Item h = new Item ("Oito","Eight","frase teste");
+        numeros.add(h);
+
+        Item i = new Item ("Nove","Nine","frase teste");
+        numeros.add(i);
+
+        Item j = new Item ("Dez","Ten","I have five potatos");
+        numeros.add(j);
 
 
 
@@ -43,7 +64,18 @@ public class Numeros extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
                 Item a = (Item) parent.getItemAtPosition(i);
-                Toast.makeText(getApplicationContext(),a.getFrase(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),a.getFrase(),Toast.LENGTH_SHORT).show();
+                AlertDialog alertDialog = new AlertDialog.Builder(Numeros.this).create();
+                alertDialog.setTitle("Aplicação em uma frase:");
+                alertDialog.setMessage(a.getFrase());
+
+                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                alertDialog.show();
             }
         });
         list.setOnItemLongClickListener(new OnItemLongClickListener() {

@@ -18,7 +18,7 @@
         <TextView
             style="@style/CategoryStyle"
             android:id="@+id/tvAlimentos"
-            android:text="alimentos"
+            android:text="@string/Alimentos"
             />
 
     </LinearLayout>
@@ -31,7 +31,7 @@
         <TextView
             style="@style/CategoryStyle"
             android:id="@+id/tvNumeros"
-            android:text="números"
+            android:text="@string/Numeros"
             />
 
     </LinearLayout>
@@ -44,7 +44,7 @@
         <TextView
             style="@style/CategoryStyle"
             android:id="@+id/tvNomesFamiliares"
-            android:text="Nome de familiares"
+            android:text="@string/Familiares"
             />
 
     </LinearLayout>
@@ -57,7 +57,7 @@
         <TextView
             style="@style/CategoryStyle"
             android:id="@+id/tvExpressoes"
-            android:text="Expressões populares"
+            android:text="@string/Expressoes"
             android:gravity="center"
             />
 

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Agenda de bolso</string>
+    <string name="Alimentos">Alimentos</string>
+    <string name="numeros">Números</string>
+    <string name="Familiares">Familiares</string>
+    <string name="novo">Novo</string>
+    <string name="Numeros">Números</string>
+    <string name="Expressoes">Expressões populares</string>
+    <string name="novoItem">Nova tradução</string>
+    <string name="veifiqueOsCampos">Verifique os campos e tente novamente</string>
+    <string name="adicionado">Adicionado!</string>
 </resources>

@@ -38,7 +38,19 @@ public class Expressoes extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
                 Item a = (Item) parent.getItemAtPosition(i);
-                Toast.makeText(getApplicationContext(),a.getFrase(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),a.getFrase(),Toast.LENGTH_SHORT).show();
+
+                AlertDialog alertDialog = new AlertDialog.Builder(Expressoes.this).create();
+                alertDialog.setTitle("Aplicação em uma frase:");
+                alertDialog.setMessage(a.getFrase());
+
+                alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                alertDialog.show();
             }
         });
         list.setOnItemLongClickListener(new OnItemLongClickListener() {

@@ -29,13 +29,13 @@ public class Alimentos extends AppCompatActivity {
         list.setAdapter(adapter);
 
 
-        Item a = new Item ("Nome teste","Nome traduzido teste","frase teste");
+        Item a = new Item ("Maça","Apple","I have a apple");
         alimentos.add(a);
 
-        Item b = new Item ("Nome teste","Nome traduzido teste","frase teste");
+        Item b = new Item ("Massa","Pasta","I eat pasta today");
         alimentos.add(b);
 
-        Item c = new Item ("Nome teste","Nome traduzido teste","frase teste");
+        Item c = new Item ("Banana","Banana","I don't like banana");
         alimentos.add(c);
 
 

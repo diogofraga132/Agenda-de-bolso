@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda de bolso</string>
+    <string name="Alimentos">foods</string>
+    <string name="Numeros">Numbers</string>
+    <string name="novo">New</string>
+    <string name="Familiares">Parents</string>
+    <string name="numeros">Numbers</string>
+    <string name="Expressoes">Popular expressions</string>
+    <string name="novoItem">New translate</string>
+    <string name="veifiqueOsCampos">Check the values and try again</string>
+    <string name="adicionado">Sucesfully!</string>
+</resources>
